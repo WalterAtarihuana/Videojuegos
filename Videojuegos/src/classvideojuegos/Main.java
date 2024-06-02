@@ -31,5 +31,22 @@ public class Main {
         desarrollador.actualizarnombre();
         desarrollador.cambiarIdDesarrollador();
 
+
+        //Clase 4
+        Reseña reseña = new Reseña("Mosquera2005", "Mario & Luigi: Paper Jam", "Gran juego", 45, new Date(10/8/2022), "R12345", 0);
+
+        reseña.eliminarReseña(usuario);
+        reseña.marcacomoDestacada();
+        reseña.añadirRespuesta();
+        reseña.reportarReseña();
+
+
+        //Clase 5
+        Enemigo enemigo = new Enemigo("Bowser", "Tortuga",50, 2000, 150, 200, 1000000);
+
+        enemigo.atacar();
+        enemigo.esquivar();
+        enemigo.daño();
+        enemigo.nivel();
     }
 }
