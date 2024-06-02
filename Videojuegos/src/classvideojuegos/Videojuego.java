@@ -1,3 +1,5 @@
+package classvideojuegos;
+
 import java.util.Date;
 
 public class Videojuegos {
