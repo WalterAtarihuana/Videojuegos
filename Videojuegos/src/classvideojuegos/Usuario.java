@@ -1,3 +1,5 @@
+package classvideojuegos;
+
 import java.util.Date;
 
 public class Usuario {
@@ -20,17 +22,17 @@ public class Usuario {
         this.edad = edadC;
     }
 
-    public void actualizarDireccion(String nuevaDireccion){
+    public void actualizarDireccion(){
         this.direccion = "nuevaDireccion";
         System.out.println("Se ha actualizado la direccion del usuario");
     }
 
-    public void actualizarCorreo(String nuevocorreo){
+    public void actualizarCorreo(){
         this.correo = "nuevoCorreo";
         System.out.println("Se ha actualizado el correo del usuario");
     }
 
-    public void actualizarTelefono(String nuevotelefono){
+    public void actualizarTelefono(){
         this.telefono = "nuevo telefono";
         System.out.println("Se ha actualizado el numero de telefono del usuario");
     }

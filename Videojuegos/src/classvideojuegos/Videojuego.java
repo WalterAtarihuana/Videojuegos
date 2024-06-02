@@ -2,7 +2,7 @@ package classvideojuegos;
 
 import java.util.Date;
 
-public class Videojuegos {
+public class Videojuego {
 
     private String titulo;
     private Date fechaLanzamiento;
@@ -12,7 +12,7 @@ public class Videojuegos {
     private double precio;
     private double rating;
 
-    public Videojuegos(String tituloC, Date fechaLanzamientoC, String desarrolladorC, String generoC, String plataformaC, double precioC, double ratingC) {
+    public Videojuego(String tituloC, Date fechaLanzamientoC, String desarrolladorC, String generoC, String plataformaC, double precioC, double ratingC) {
 
         this.titulo = tituloC;
         this.fechaLanzamiento = fechaLanzamientoC;
@@ -23,12 +23,12 @@ public class Videojuegos {
         this.rating = ratingC;
     }
 
-    public void actualizarPrecio(double nuevoPrecio){
+    public void actualizarPrecio(){
         this.desarrollador = "nuevoPrecio";
         System.out.println("El precio del videojuego ha sido actualizado");
     }
 
-    public void actualizarRating(double nuevoRating){
+    public void actualizarRating(){
         this.desarrollador = "Actualizando Rating";
         System.out.println("El rating del videojuego a sido actualizado");
 
