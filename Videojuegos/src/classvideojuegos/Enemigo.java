@@ -20,24 +20,24 @@ public class Enemigo {
         this.experienciaOtorgada = experienciaOtrogadaC;
     }
 
-    public void atacar(){
+    public void atacarPersonaje(){
         this.nombre = "Atacando";
         System.out.println("El enemigo esta atacando");
     }
 
     public void esquivar(){
         this.nombre = "Esquivando";
-        System.out.println("Ha intentado esquivar el ataque");
+        System.out.println("El enemigo ha intentado esquivar el ataque");
     }
 
-    public void daño(){
+    public void recibirDaño(){
         this.nombre = "Herido";
-        System.out.println("Ha recibido daño");
+        System.out.println("El enemigo ha recibido daño");
     }
 
     public void nivel(){
         this.nombre = "Experiencia";
-        System.out.println("Ha subido de nivel");
+        System.out.println("El enemigo ha subido de nivel");
     }
 
     public String getNombre() {

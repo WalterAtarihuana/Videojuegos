@@ -33,20 +33,39 @@ public class Main {
 
 
         //Clase 4
-        Reseña reseña = new Reseña("Mosquera2005", "Mario & Luigi: Paper Jam", "Gran juego", 45, new Date(10/8/2022), "R12345", 0);
+        Personajes personajes = new Personajes("Mario", "Humano", 0, 0, 4, "Rescate", 5);
 
-        reseña.eliminarReseña(usuario);
-        reseña.marcacomoDestacada();
-        reseña.añadirRespuesta();
-        reseña.reportarReseña();
+        personajes.caminar();
+        personajes.atacar();
+        personajes.usarItem();
+        personajes.recogerObjeto();
 
 
         //Clase 5
         Enemigo enemigo = new Enemigo("Bowser", "Tortuga",50, 2000, 150, 200, 1000000);
 
-        enemigo.atacar();
+        enemigo.atacarPersonaje();
         enemigo.esquivar();
-        enemigo.daño();
+        enemigo.recibirDaño();
         enemigo.nivel();
+
+
+        //Clase 6
+        Nivel nivel = new Nivel(1, "Dificil", "Aventura", "100 monedas", "Bosque", 30, 40);
+
+        nivel.iniciarnivel();
+        nivel.finalizarnivel();
+        nivel.obtenerInformacion();
+        nivel.establecerTiempoLimite();
+
+
+        //Clase 7
+        Item item = new Item("Espada Legendaria", "Arma", "Epico", 1, 5.0, 500, true);
+
+        item.equiparItem();
+        item.venderItem();
+        item.eliminarItem();
+        item.mejorar();
+
     }
 }
